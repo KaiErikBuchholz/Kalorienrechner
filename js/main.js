@@ -17,7 +17,7 @@ let KaÜb1;
 let KaÜbEr;
 let KaNiÜb;
 
-function tfAuslesen() {
+function tfAuslesen(){
     Kalorienziel = parseInt(document.getElementById("tfKalorienziel").value);
     FrLm1 = parseInt(document.getElementById("tfFrühstück1").value);
     FrLm2 = parseInt(document.getElementById("tfFrühstück2").value);
@@ -32,7 +32,19 @@ function tfAuslesen() {
     AbLm3 = parseInt(document.getElementById("tfAbendbrot3").value);
     AbLm4 = parseInt(document.getElementById("tfAbendbrot4").value);
 
-    SuLmG = FrLm1 + FrLm2 + FrLm3 + FrLm4 + MiLm1 + MiLm2 + MiLm3 + MiLm4 + AbLm1 + AbLm2 + AbLm3 + AbLm4
+    KalorienPruefen(FrLm1);
+    KalorienPruefen(FrLm2);
+    KalorienPruefen(FrLm3);
+    KalorienPruefen(FrLm4);
+    KalorienPruefen(MiLm1);
+    KalorienPruefen(MiLm2);
+    KalorienPruefen(MiLm3);
+    KalorienPruefen(MiLm4);
+    KalorienPruefen(AbLm1);
+    KalorienPruefen(AbLm2);
+    KalorienPruefen(AbLm3);
+    KalorienPruefen(AbLm4);
+
 
     KaNiÜb = "So viele Kalorien kannst du heute noch verbrauchen."
     Ergebnis = Kalorienziel - SuLmG
@@ -54,4 +66,16 @@ function tfAuslesen() {
 
 
 
+}
+
+
+
+function KalorienPruefen(Kalorien){
+    if(isNaN(Kalorien)){
+        console.log(Kalorien + "ist keine Zahl")
+    }else if (Kalorien <0){
+        console.log(Kalorien + "ist keine mögliche Kalorienzahl")
+    }else if(Kalorien >0){
+        SuLmG = FrLm1 + FrLm2 + FrLm2 + FrLm3 + FrLm4 + MiLm1 + MiLm2 + MiLm3 + MiLm4 + AbLm1 + AbLm2 + AbLm3 + AbLm4
+    }
 }
