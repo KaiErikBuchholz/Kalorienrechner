@@ -1,0 +1,22 @@
+body{
+    margin: 15px;
+    background-color: rgb(25,25,25);
+
+}
+h1 {
+    color: red;
+}
+h4 {
+    color: orange;
+}
+
+a {
+    color: blue;
+
+}
+p {
+    color: white;
+}
+input{
+    color: white;
+}
