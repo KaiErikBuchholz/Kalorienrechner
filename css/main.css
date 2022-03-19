@@ -1,15 +1,24 @@
 body{
     margin: 15px;
+    background-color: rgb(105,105,105);
+    color: white;
 }
 h1 {
-    color: red;
+    color: black;
 }
 h4 {
-    color: orange;
+    color: gold;
 }
 
 a {
-    color: blue;
+    color: cornflowerblue;
 }
-
-
+form{
+    color: white;
+}
+label{
+    color: white;
+}
+div{
+    color: white;
+}

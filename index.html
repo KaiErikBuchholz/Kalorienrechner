@@ -12,16 +12,15 @@
 
 </head>
 <body>
-<h1>Kostenfreier Kalorienrechner</h1>
 <img src="img/kalorienrechner-verival.jpg" height="600" width="1000" alt="Kalorienrechner">
 <p> Diese Seite soll dir helfen dein tägliches Kalorienziel zuhalten!</p>
 <p> Damit du weißt, wie viele Kalorien du pro Tag verbrauchen kannst, informiere dich online. Im Folgen Link findest du eine Tabelle, die hilfsreich sein kann. </p>
 <a href="https://www.tk.de/techniker/magazin/ernaehrung/uebergewicht-und-diaet/wie-viele-kalorien-pro-tag-2006758?tkcm=aaus">Hier findest du die Tabelle, wo du siehst, wie viele Kalorien du pro Tag verbrauchen kannst.</a>
 <p> Bitte tragen Sie ihren Richtwert das oberste Tetfeld ein! Jedoch nur die Zahl nicht die Einheit</p>
 <p> Wenn du abnehmen willst, solltest du ein Kaloriendefizit haben.</p>
-<p>Trägen Sie in den folgenden ihre Kalorienzahl für ihre Mahlzeiten ein. Jedoch nur die Zahl nicht die Einheit!</p>
+<p>Trägen Sie in den folgenden ihre Kalorienzahl für ihre Mahlzeiten ein. Jedoch nur die Zahl nicht die Einheit! Jedoch muss man in jedes Feld etwas schreiben!</p>
 <h4> Kalorienziel </h4>
-<!-- Numeric Textfield with Floating Label -->
+
 <form action="#">
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
         <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="tfKalorienziel">
@@ -31,7 +30,7 @@
 </form>
 
 <h4> Frühstück</h4>
-<!-- Numeric Textfield with Floating Label -->
+
 <form action="#">
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
         <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="tfFrühstück1">
@@ -40,7 +39,6 @@
     </div>
 </form>
 
-<!-- Numeric Textfield with Floating Label -->
 <form action="#">
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
         <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="tfFrühstück2">
@@ -49,7 +47,7 @@
     </div>
 </form>
 
-<!-- Numeric Textfield with Floating Label -->
+
 <form action="#">
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
         <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="tfFrühstück3">
@@ -58,7 +56,6 @@
     </div>
 </form>
 
-<!-- Numeric Textfield with Floating Label -->
 <form action="#">
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
         <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="tfFrühstück4">
@@ -69,7 +66,6 @@
 
 <h4> Mittag</h4>
 
-<!-- Numeric Textfield with Floating Label -->
 <form action="#">
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
         <label for="tfMittag1"></label><input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="tfMittag1">
@@ -78,7 +74,6 @@
     </div>
 </form>
 
-<!-- Numeric Textfield with Floating Label -->
 <form action="#">
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
         <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="tfMittag2">
@@ -87,7 +82,7 @@
     </div>
 </form>
 
-<!-- Numeric Textfield with Floating Label -->
+
 <form action="#">
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
         <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="tfMittag3">
@@ -96,7 +91,6 @@
     </div>
 </form>
 
-<!-- Numeric Textfield with Floating Label -->
 <form action="#">
     <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
         <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="tfMittag4">
@@ -149,12 +143,12 @@
 <p id="ausgabe3"></p>
 
 
+<a href="https://www.foodspring.de/magazine/kalorienverbrauch-tabelle">Falls du dein Kalorienziel überschritten hast, kannst du hier nachlesen welche Sportarten du machen kannst um die Kalorien wieder verbrauchen. </a>
+<br>
 <!-- Accent-colored raised button with ripple -->
 <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-onclick="tfAuslesen()">
+        onclick="tfAuslesen()">
     Ausrechnen
 </button>
 </body>
-
-
 </html>

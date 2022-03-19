@@ -1,21 +1,21 @@
-let Kalorienziel;
-let FrLm1;
+let Kalorienziel; //erschafft Variable
+let FrLm1;          //erschafft Variable FrühstückLebensmittel1
 let FrLm2;
 let FrLm3;
 let FrLm4;
-let MiLm1;
+let MiLm1;          //erschafft Variable MittagessenLebensmittel1
 let MiLm2;
 let MiLm3;
 let MiLm4;
-let AbLm1;
+let AbLm1;          //erschafft Variable AbendessenLebensmittel1
 let AbLm2;
 let AbLm3;
 let AbLm4;
 let SuLmG;
-let Ergebnis;
-let KaÜb1;
-let KaÜbEr;
-let KaNiÜb;
+let Ergebnis;       //erschafft Variable Ergebnis
+let KaÜb1;          //erschafft Variable Ergebnis
+let KaÜbEr;         //erschafft Variable Kalorienüberziel
+let KaNiÜb;         //erschafft Variable Kalorien nicht über dem Ziel
 
 function tfAuslesen(){
     Kalorienziel = parseInt(document.getElementById("tfKalorienziel").value);
@@ -51,7 +51,7 @@ function tfAuslesen(){
     KaÜb1 = "Du hast dein Kalorienziel überschritten. So viele Kalorien hast du zuviel verbraucht"
     KaÜbEr = Ergebnis * -1
 
-    if (Ergebnis > 0 )
+    if (Ergebnis => 0 )
     {
         document.getElementById("ausgabe0").innerHTML = KaNiÜb;
         document.getElementById("ausgabe1").innerHTML = Ergebnis;
