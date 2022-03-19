@@ -13,11 +13,9 @@ let AbLm3;
 let AbLm4;
 let SuLmG;
 let Ergebnis;
-
-
-
-
-
+let KaÜb1;
+let KaÜbEr;
+let KaNiÜb;
 
 function tfAuslesen() {
     Kalorienziel = parseInt(document.getElementById("tfKalorienziel").value);
@@ -36,13 +34,20 @@ function tfAuslesen() {
 
     SuLmG = FrLm1 + FrLm2 + FrLm3 + FrLm4 + MiLm1 + MiLm2 + MiLm3 + MiLm4 + AbLm1 + AbLm2 + AbLm3 + AbLm4
 
+    KaNiÜb = "So viele Kalorien kannst du heute noch verbrauchen."
     Ergebnis = Kalorienziel - SuLmG
-
-    console.log(Ergebnis)
+    KaÜb1 = "Du hast dein Kalorienziel überschritten. So viele Kalorien hast du zuviel verbraucht"
+    KaÜbEr = Ergebnis * -1
 
     if (Ergebnis > 0 )
     {
-        document.getElementById("ausgabe").innerHTML = Ergebnis;
+        document.getElementById("ausgabe0").innerHTML = KaNiÜb;
+        document.getElementById("ausgabe1").innerHTML = Ergebnis;
+    }if (Ergebnis < 0){
+        console.log("Du hast dein Kalorienziel überschritten.")
+        document.getElementById("ausgabe2").innerHTML = KaÜb1
+        document.getElementById("ausgabe3").innerHTML = KaÜbEr
+
     }
 
 
