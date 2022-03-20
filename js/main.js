@@ -51,7 +51,7 @@ function tfAuslesen(){
     KaÜb1 = "Du hast dein Kalorienziel überschritten. So viele Kalorien hast du zuviel verbraucht"
     KaÜbEr = Ergebnis * -1
 
-    if (Ergebnis => 0 )
+    if (Ergebnis >= 0 )
     {
         document.getElementById("ausgabe0").innerHTML = KaNiÜb; //Ausgabe, wenn man unter seinem Kalorienziel liegt
         document.getElementById("ausgabe1").innerHTML = Ergebnis;
