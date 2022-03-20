@@ -18,7 +18,7 @@ let KaÜbEr;         //erschafft Variable Kalorienüberziel
 let KaNiÜb;         //erschafft Variable Kalorien nicht über dem Ziel
 
 function tfAuslesen(){
-    Kalorienziel = parseInt(document.getElementById("tfKalorienziel").value);
+    Kalorienziel = parseInt(document.getElementById("tfKalorienziel").value); //definiert die Variable mit dem Inhalt des Textfeldes, falls es eine Zahl ist.
     FrLm1 = parseInt(document.getElementById("tfFrühstück1").value);
     FrLm2 = parseInt(document.getElementById("tfFrühstück2").value);
     FrLm3 = parseInt(document.getElementById("tfFrühstück3").value);
@@ -32,7 +32,7 @@ function tfAuslesen(){
     AbLm3 = parseInt(document.getElementById("tfAbendbrot3").value);
     AbLm4 = parseInt(document.getElementById("tfAbendbrot4").value);
 
-    KalorienPruefen(FrLm1);
+    KalorienPruefen(FrLm1); //lässt Funktion für die Variablen durchführen
     KalorienPruefen(FrLm2);
     KalorienPruefen(FrLm3);
     KalorienPruefen(FrLm4);
@@ -46,18 +46,18 @@ function tfAuslesen(){
     KalorienPruefen(AbLm4);
 
 
-    KaNiÜb = "So viele Kalorien kannst du heute noch verbrauchen."
+    KaNiÜb = "So viele Kalorien kannst du heute noch verbrauchen." //definiert die Variablen
     Ergebnis = Kalorienziel - SuLmG
     KaÜb1 = "Du hast dein Kalorienziel überschritten. So viele Kalorien hast du zuviel verbraucht"
     KaÜbEr = Ergebnis * -1
 
     if (Ergebnis => 0 )
     {
-        document.getElementById("ausgabe0").innerHTML = KaNiÜb;
+        document.getElementById("ausgabe0").innerHTML = KaNiÜb; //Ausgabe, wenn man unter seinem Kalorienziel liegt
         document.getElementById("ausgabe1").innerHTML = Ergebnis;
     }if (Ergebnis < 0){
         console.log("Du hast dein Kalorienziel überschritten.")
-        document.getElementById("ausgabe2").innerHTML = KaÜb1
+        document.getElementById("ausgabe2").innerHTML = KaÜb1 //Ausgabe, wenn man über seinem Kalorienziel liegt
         document.getElementById("ausgabe3").innerHTML = KaÜbEr
 
     }
@@ -70,7 +70,7 @@ function tfAuslesen(){
 
 
 
-function KalorienPruefen(Kalorien){
+function KalorienPruefen(Kalorien){ //Funktion, um die Eingabe in den Textfeldern zu überprüfen
     if(isNaN(Kalorien)){
         console.log(Kalorien + "ist keine Zahl")
     }else if (Kalorien <0){
