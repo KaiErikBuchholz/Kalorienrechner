@@ -53,13 +53,13 @@ function tfAuslesen(){
 
     if (Ergebnis >= 0 )
     {
-        document.getElementById("ausgabe0").style.color = "lightgreen"
+        document.getElementById("ausgabe0").style.color = "lightgreen" //färbt die Ausgabe0, wenn die If Bedingung erfüllt ist grün.
         document.getElementById("ausgabe1").style.color = "lightgreen"
         document.getElementById("ausgabe0").innerHTML = KaNiÜb; //Ausgabe, wenn man unter seinem Kalorienziel liegt
         document.getElementById("ausgabe1").innerHTML = Ergebnis;
     }if (Ergebnis < 0){
         console.log("Du hast dein Kalorienziel überschritten.")
-        document.getElementById("ausgabe2").style.color = "crimson";
+        document.getElementById("ausgabe2").style.color = "crimson";//färbt die Ausgabe2, wenn die If Bedingung erfüllt ist rot.
         document.getElementById("ausgabe3").style.color = "crimson";
         document.getElementById("ausgabe2").innerHTML = KaÜb1 //Ausgabe, wenn man über seinem Kalorienziel liegt
         document.getElementById("ausgabe3").innerHTML = KaÜbEr
