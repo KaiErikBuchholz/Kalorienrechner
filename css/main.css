@@ -1,6 +1,6 @@
 body{
     margin: 15px;
-    background-color: rgb(105,105,105);
+    background-color: rgb(89, 89, 89);
     color: white;
 }
 h1 {
@@ -12,6 +12,7 @@ h4 {
 
 a {
     color: dodgerblue;
+    font-size: medium;
 }
 form{
     color: white;
@@ -21,4 +22,7 @@ label{
 }
 div{
     color: white;
+}
+p{
+    font-size: medium;
 }

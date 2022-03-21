@@ -48,15 +48,19 @@ function tfAuslesen(){
 
     KaNiÜb = "So viele Kalorien kannst du heute noch verbrauchen." //definiert die Variablen
     Ergebnis = Kalorienziel - SuLmG
-    KaÜb1 = "Du hast dein Kalorienziel überschritten. So viele Kalorien hast du zuviel verbraucht"
+    KaÜb1 = "Du hast dein Kalorienziel überschritten. So viele Kalorien hast du zuviel verbraucht."
     KaÜbEr = Ergebnis * -1
 
     if (Ergebnis >= 0 )
     {
+        document.getElementById("ausgabe0").style.color = "lightgreen"
+        document.getElementById("ausgabe1").style.color = "lightgreen"
         document.getElementById("ausgabe0").innerHTML = KaNiÜb; //Ausgabe, wenn man unter seinem Kalorienziel liegt
         document.getElementById("ausgabe1").innerHTML = Ergebnis;
     }if (Ergebnis < 0){
         console.log("Du hast dein Kalorienziel überschritten.")
+        document.getElementById("ausgabe2").style.color = "crimson";
+        document.getElementById("ausgabe3").style.color = "crimson";
         document.getElementById("ausgabe2").innerHTML = KaÜb1 //Ausgabe, wenn man über seinem Kalorienziel liegt
         document.getElementById("ausgabe3").innerHTML = KaÜbEr
 
